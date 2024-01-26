@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Lalezar&family=Lateef:wght@200;300;400;500;600;700;800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Ink&family=Tajawal:wght@300;400;700&display=swap');
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.head {
+    background-color: #9750da;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+.main-all {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 400px;
+    text-align: center;
+    background-color: #9750da;
+    border-radius: 20px;
+    border: 3px solid #9750da;
+    overflow: auto;
+}
+
+@media (min-width: 768px) {
+    .main-all{
+        width: 750px;
+    }
+}
+/* وسط*/
+@media (min-width: 992px) {
+    .main-all{
+        width: 970px;
+    }
+}
+/*كبير*/
+@media (min-width: 1200px) {
+    .main-all{
+        width: 1170px;
+    }
+}
+
+.weight {
+    background-color: #fff;
+    color: #9750da;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 3px solid #9750da98;
+    outline: none;
+    text-align: right;
+    margin-top: 3%;
+}
+
+.Length {
+    background-color: #fff;
+    color: #9750da;
+    margin: 10px 0 10px 0;
+    padding: 5px;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 3px solid #9750da98;
+    outline: none;
+    text-align: right;
+}
+
+.weight:hover {
+    background-color: #0b0313;
+    transform: scale(1);
+}
+
+.Length:hover {
+    background-color: #0b0313;
+    transform: scale(1);
+}
+
+.submet {
+    background-color: #fff;
+    color: #9750da;
+    width: 60%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid #9750da;
+    cursor: pointer;
+
+}
+
+.submet:hover {
+    background-color: #0b0313;
+    transform: scale(1);
+}
+
+.main-weight {
+    background-color: #fff;
+    color: #9750da;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #9750da;
+  
+}
+.main-weight p {
+    font-size: 20px;
+}
+
+.icon h3 {
+    color: #fff;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <title>كثافة جسمك</title>
+</head>
+
+<body>
+      <header class="head">
+            <h2>كم كثافة جسمي؟</h2>
+            <p dir="auto">الموقع مبني على حسابات BMI العالميه</p>
+      </header>
+
+      </div>
+      <div class="main-all">
+
+            <div class="input-but">
+                  <input type="text" class="weight" id="Weight" placeholder="اكتب وزنك هنا" required>
+                  <br>
+                  <input type="text" class="Length" id="Length" placeholder="اكتب طولك هنا" required>
+                  <br>
+                  <button class="submet" id="submet">ارسل</button>
+            </div>
+
+            <div class="main-weight">
+                  <p dir="auto">كثافة وزنك هي :</p>
+                  <h4 dir="auto" id="text-weight"></h4>
+                  <h3 id="nub-weight"></h3>
+            </div>
+
+            <div class="icon">
+                  <a href="https://t.me/hd0r3" target="_blank"><i class="fa-brands fa-telegram"
+                              style="color: #fff; padding-right: 5px;"></i></a>
+                  <a href="https://www.tiktok.com/@7eum?" target="_blank"><i class="fa-brands fa-tiktok"
+                              style="color: #fff; padding-right: 5px;"></i></a>
+                  <a href="https://www.instagram.com/n6.44/" target="_blank"><i class="fa-brands fa-instagram"
+                              style="color: #fff;"></i></a>
+                  <h3>حيدر علي مبرمج مواقع ويب <br>(K H A Z)</h3>
+            </div>
+
+      </div>
+</body>
+<script>
+      document.getElementById("submet").addEventListener("click", function () {
+            var Weight = document.getElementById("Weight").value
+            var Length = document.getElementById("Length").value
+            var resulting = Weight / (Length * Length)
+            console.log(resulting)
+            resulting = resulting.toString();
+            resulting = resulting.substring(0, 5);
+            document.getElementById("nub-weight").innerHTML = resulting
+            if (resulting < "18") {
+                  document.getElementById("text-weight").innerHTML = "نحيف, يجب ان تزيد وزنك"
+            }
+            else if (resulting < "24.9") {
+                  document.getElementById("text-weight").innerHTML = "مثالي, استمر انت رياضي"
+            }
+            else if (resulting < "29.9") {
+                  document.getElementById("text-weight").innerHTML = "سمنه زائده, غير مقبول"
+            }
+            else if (resulting > "34.9") {
+                  document.getElementById("text-weight").innerHTML = "سمنه درجه اولى , تحتاج الى ممارسه الرياضيه"
+            }
+            else if (resulting > "39.9") {
+                  document.getElementById("text-weight").innerHTML = "سمنه درجه ثانيه, تحتاج الى ممارسه رياضيه"
+            }
+            else if (resulting > "40" && resulting < "100") {
+                  document.getElementById("text-weight").innerHTML = "سمنه خطره, تحتاج الى مراجعه دكتور"
+            }
+      })
+</script>
+
+</html>
